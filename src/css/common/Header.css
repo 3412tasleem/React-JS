@@ -1,0 +1,253 @@
+.header_container {
+  display: flex;
+  width: 100%;
+  /* background-color: rgb(223, 20, 13); */
+  padding: 0 0.5%;
+  justify-content: space-between;
+  /* background: red; */
+  height: 60px;
+}
+.header_start {
+  display: flex;
+  justify-content: flex-start;
+  width: 20%;
+  /* background-color: rgb(12, 156, 156); */
+}
+.header_subStart {
+  display: flex;
+  width: 100%;
+  padding: 4%;
+  justify-content: space-around;
+}
+.sidbar_menu_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  /* margin-top: 4%; */
+  /* height: 40px; */
+  /* background-color: aqua; */
+  margin-right: 8%;
+}
+.sidbar_menu_button:hover {
+  background-color: rgb(243, 239, 239);
+  /* height: 50px; */
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+.youtube_logo {
+  display: flex;
+  align-items: center;
+  width: 13vw;
+  /* font-size: large; */
+  cursor: pointer;
+  /* font-size: 2vw; */
+  /* background-color: rgb(228, 236, 236); */
+}
+.YouTubeIcon {
+  color: red;
+}
+.youtube_text {
+  /* font-size: larger; */
+  font-weight: bold;
+  font-size: 1.7vw;
+}
+.header_center {
+  display: flex;
+  width: 60%;
+
+  /* background-color: blue; */
+}
+.header_subCenter {
+  width: 100%;
+  /* background-color: rgb(228, 157, 157); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search_box {
+  /* background-color: rgb(185, 66, 66); */
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 6%;
+}
+.search_box_input {
+  display: flex;
+  justify-content: end;
+  /* background-color: rgb(199, 33, 33); */
+
+  width: 100%;
+  overflow: hidden;
+}
+.input_dive {
+  display: flex;
+  width: 100%;
+  /* padding: 1%; */
+}
+.search_box_input input {
+  width: 100%;
+  padding: 0 0 0 4%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: none;
+  outline: none;
+  border: solid 1px rgb(214, 209, 209);
+}
+.search_icon {
+  display: flex;
+  align-items: center;
+  border: solid 0.5px rgb(221, 217, 217);
+  justify-content: center;
+  background-color: rgb(247, 244, 244);
+  width: 10%;
+  padding: 1.2%;
+
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.mic_icon {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 5%;
+  background-color: rgb(245, 243, 243);
+  border-radius: 50px;
+  padding: 1%;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+.header_end {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+  /* background-color: yellowgreen; */
+}
+.header_Subend {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3.5%;
+  /* background-color: rgb(8, 48, 48); */
+}
+.video_creater {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  cursor: pointer;
+}
+
+.notification {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  margin: 0% 10% 0% 0%;
+  cursor: pointer;
+}
+
+.account_profile {
+  display: flex;
+  justify-content: flex-end;
+  width: 15%;
+  cursor: pointer;
+
+  /* background-color: rgb(236, 30, 30); */
+}
+.account_profile img {
+  width: 100%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .header_container {
+    width: 100%;
+  }
+
+  .header_subCenter {
+    width: 100%;
+  }
+  .mic_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7%;
+    margin: 2%;
+  }
+  .youtube_text {
+    font-size: 3.5vw;
+  }
+  .search_icon {
+    display: none;
+  }
+  .input_dive input {
+    /* background-color: aqua; */
+    margin-left: 25%;
+    border-radius: 12px;
+    padding: 1%;
+  }
+
+  .header_start {
+    width: 30%;
+  }
+  .account_profile {
+    width: 30%;
+  }
+  .video_creater {
+    display: none;
+  }
+  .notification {
+    display: none;
+  }
+  .header_center {
+    width: 70%;
+  }
+  .header_end {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  /* For mobile phones: */
+  .header_container {
+    width: 100%;
+  }
+  .sidbar_menu_button {
+    margin-right: 10%;
+  }
+  .header_subCenter {
+    width: 100%;
+  }
+  .mic_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7%;
+    margin: 2%;
+  }
+  .youtube_text {
+    font-size: 2.5vw;
+  }
+  .search_icon {
+    display: none;
+  }
+  .input_dive input {
+    border-radius: 12px;
+    padding: 2.5%;
+  }
+  .header_start {
+    width: 30%;
+  }
+  .header_center {
+    width: 40%;
+  }
+  .header_end {
+    width: 30%;
+  }
+}

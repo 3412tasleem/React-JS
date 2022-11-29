@@ -1,0 +1,78 @@
+.main_subContainer {
+  width: 100%;
+  height: 50%;
+  margin: 0% 0% 0% 2%;
+  overflow-y: scroll;
+}
+.upper_items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 5%;
+
+  border-bottom: solid 1px rgb(192, 188, 188);
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 3% 0%;
+  text-align: center;
+  font-weight: bold;
+
+  width: 100%;
+  /* background-color: rgb(230, 227, 227); */
+}
+
+.home:hover {
+  background-color: rgb(233, 231, 231);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.home_icon {
+  width: 20%;
+}
+.home_text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  font-weight: normal;
+  font-size: 1.1vw;
+}
+.divider {
+  border-radius: 12px;
+  background: rgb(245, 243, 243);
+}
+.dividers {
+  background-color: rgb(231, 227, 227);
+  width: 100%;
+  height: 1px;
+}
+.subscribtions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: justify;
+  padding: 5%;
+
+  font-size: larger;
+}
+.shorts {
+  border-radius: 12px;
+
+  font-weight: bolder;
+  background-color: rgb(243, 239, 239);
+}
+.sucrib {
+  width: 10%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  /* For mobile phones: */
+  .home_icon {
+    width: 12vw;
+  }
+}
